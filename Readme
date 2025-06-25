@@ -1,0 +1,12 @@
+This is a News classifier pipeline, which scraps live news/posts from social media platforms like: Reddit, Telegram and Classifies the extracted news as REAL/FAKE.
+
+Classifier Pipeline(HYBRID ARCHITECTURE):
+
+    1. DeBERTa-base --> Finetuned with dataset and made it ready for classifying news.
+    2. LLM (OpenAI GPT) --> Fetches the scraped news and web Search (duckduckgo/Brave) with authenticate news channel to find if the News is REAL?FAKE with brief Reason.
+    3. BERT --> In case of conflict between DeBERT and LLM,the fine-tuned BERT Model also gives the final classification.
+
+NOTE:
+
+    news_classifier.py is the script containing the HYBRID classifier Model. 
+    

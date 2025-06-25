@@ -1,0 +1,22 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Environment files
+.env
+
+# Model checkpoints
+*.pt
+
+# Logs
+*.log
+
+# CSV/JSON data files (if sensitive or large)
+*.csv
+*.json
+
+# VS Code settings (optional)
+.vscode/
+
+# Session and temp files
+*.session
